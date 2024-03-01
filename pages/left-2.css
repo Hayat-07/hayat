@@ -1,4 +1,8 @@
 body .myDiv {
   color: rgb(0, 139, 127);
-  border: 5px solid green;
+  border: 2px solid rgba(0, 167, 167, 0.719);
+  text-align: center;
+  border-radius: 3vh;
+  padding: 3vh;
+  width: 60vw;
 }/*# sourceMappingURL=left-2.css.map */

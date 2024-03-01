@@ -1,5 +1,8 @@
 body .myDiv {
   color: rgb(0, 139, 127);
-  border: 5px solid green;
+  border: 2px solid rgba(0, 167, 167, 0.719);
+  border-radius: 3vh;
+  padding: 3vh;
+  width: 60vw;
   flex: 1;
 }/*# sourceMappingURL=left-3.css.map */

@@ -58,13 +58,18 @@
        justify-content: center;
        align-items: center;
        h2{
-        font-size: 8vh;
-        
-        transition-duration: 1s;
-        &:hover{
-            text-shadow:0 0 70px rgb(145, 255, 255),5px 5px 10px rgb(0, 36, 36);
+            font-size: 8vh;
+            animation: puls 3s ease-in-out infinite;
+            transition-duration: 2s;
+                &:hover{
+                    text-shadow:0 0 70px rgb(145, 255, 255),5px 5px 10px rgb(0, 36, 36);
+                }
+
         }
-       }
+        h4{
+            
+            color: rgb(0, 182, 0);
+        }
 
   
        
@@ -116,6 +121,11 @@
     }
 }
 
+@keyframes puls {
+    0%{ text-shadow:none ;}
+    50%{ text-shadow:0 10px 70px rgb(206, 255, 255),5px 5px 10px rgb(0, 36, 36);}
+    0%{ text-shadow:none ;}
+}
 
 
 

@@ -16,7 +16,7 @@
     
     <div class="heroSection">
         <div class="introDiv">
-            <h2><span style="color: rgb(0, 187, 187);">MD</span> HAYATULLAH</h2>
+            <h2><span style="color: rgb(0, 124, 124);">MD</span> HAYATULLAH</h2>
             <hr>
             <div class="cvGitLeet">
                 <div class="linkBtn"><a href="https://www.behance.net/gallery/192710521/Resume-MD-HAYATULLAH" target="_blank">CV</a></div>
@@ -41,12 +41,30 @@
 
     <div class="mainSection">
        <div class="leftMainDiv">
-       <h3>left</h3>
+        
+         <div class="container">
+            <div class="myDiv">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non totam vel? Culpa fugit illo doloremque, facilis consectetur iste magnam!</p>
+                <h3>This is Bio page</h3>
+           
+        
+            <br>
+            <hr>
+            <hr>
+            <button onclick="setLeftMainDiv(2)">Skills page</button>
+            <button onclick="setLeftMainDiv(3)">Project page</button>
+            <a href="./pages/extra.html">Go to extra page</a>
+            
+         </div>
+        
+        
+        </div>
+           
        </div>
        <div class="rightMainDiv">
-            <button class=" rightBtn bioBtnDiv  "><h3>Bio</h3></button>
-            <button class=" rightBtn SkillsBtnDiv "><h3>Skills</h3></button>
-            <button class=" rightBtn ProjectsBtnDiv "><h3>Projects</h3></button>
+            <button onclick="setLeftMainDiv(1)" class=" rightBtn bioBtnDiv  "><h3>Bio</h3></button>
+            <button onclick="setLeftMainDiv(2)" class=" rightBtn SkillsBtnDiv "><h3>Skills</h3></button>
+            <button onclick="setLeftMainDiv(3)" class=" rightBtn ProjectsBtnDiv "><h3>Projects</h3></button>
        </div>
     </div>
 

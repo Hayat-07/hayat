@@ -1,5 +1,5 @@
 :root{
- --myTextColor: rgb(193, 251, 255);   
+ --myTextColor: rgb(0, 73, 78);   
  --mylinkColor: rgb(185, 218, 212);   
  --myBgColor1: rgba(130, 173, 166, 0.452);  
  --myBgGradient: 
@@ -37,7 +37,7 @@
 
 
 .mainbody{
-    color:gray;
+    color:rgb(0, 231, 193);
    
    
 }
@@ -45,10 +45,10 @@
 
 .heroSection{
     padding:0 100px;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(to bottom,rgb(0, 255, 242),black 70%);
+    background-image: linear-gradient(to bottom,rgb(0, 57, 59)98%,rgb(255, 255, 255) );
     .introDiv{
        flex:2;
        display: flex;
@@ -56,12 +56,12 @@
        justify-content: center;
        align-items: center;
        h2{
-        font-size: 10vh;
+        font-size: 5vh;
         margin-top:20vh ;
        }
        
        .cvGitLeet{
-        margin-top: 10vh;
+        margin-top: 5vh;
         @include centerItemFlex(center,center );
         .linkBtn{
             min-width: 20vh;
@@ -121,8 +121,8 @@
 
 
 .mainSection{
-    min-height: 100vh;
-    background-image: linear-gradient(to top,rgb(0, 78, 74) 1%,black );
+    min-height: 80vh;
+    // background-image: linear-gradient(to top,rgb(0, 78, 74) 1%,black );
     
     @include centerItemGrid(center,center);
     grid-template-columns: 5fr 1fr;
@@ -132,7 +132,14 @@
 
 
     .leftMainDiv{
-        @include centerItemFlex(center, center )
+        @include centerItemFlex(stretch, stretch );
+        padding:5%;
+        height: 90vh;
+        .container{
+            @include centerItemFlex(stretch, stretch );
+            border: 1px solid gray;
+        }
+        // border: 1px solid aqua;
         
     }
     .rightMainDiv{
@@ -152,15 +159,16 @@
             background-color: rgba(123, 145, 145, 0.233);
             @include centerItemFlex(center,center );
             border-left: 2px solid rgba(128, 128, 128, 0);
-        
+            font-weight: 900;
 
             &:hover{
                 
                 cursor: pointer;
-                border-left: 2px solid gray;
+                
+                border-left: 2px solid rgb(0, 56, 56);
                 h3{
-                    font-weight: 900;
-                    color: white;
+                    
+                    color: rgb(0, 117, 117);
                 }
             }
            

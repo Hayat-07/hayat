@@ -5,4 +5,51 @@ body .myDiv {
   border-radius: 3vh;
   padding: 3vh;
   width: 60vw;
+}
+body .myDiv .skillDiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+body .myDiv .skillDiv .skillBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+body .myDiv .skillDiv .skillBar {
+  margin-top: 20px;
+  height: 10px;
+  margin-left: 20px;
+  display: flex;
+  width: 30vw;
+  background-color: #949494;
+  padding: 2px;
+  border-radius: 12px;
+}
+body .myDiv .skillDiv .skillBar .innerBar {
+  box-sizing: inherit;
+  display: flex;
+  justify-content: end;
+  width: 10vw;
+  background-color: #4cffe4;
+  border-radius: 12px;
+}
+body .myDiv .skillDiv .skillBar .innerBar .percentBox {
+  position: sticky;
+  justify-self: end;
+  align-self: end;
+  margin-left: 15px;
+  left: 10px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #202048;
+  color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=left-2.css.map */

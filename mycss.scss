@@ -28,7 +28,10 @@
 };
 
 
-
+button{
+    border: none;
+    outline: none;
+}
 
 
 
@@ -45,7 +48,7 @@
 
 .heroSection{
     padding:0 100px;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     @include centerItemGrid(center,end );
@@ -135,7 +138,7 @@
 .buttonDiv{
     text-align: center;
     min-width: 20vw;
-    width: 30vw;
+    width: 22vw;
     height: 50px;
     position: absolute;
     background-color: rgb(0, 0, 0);
@@ -145,10 +148,10 @@
         @include centerItemFlex(center,center );
 
        button{
-        margin-right: 1vw;
+        transform: translateX(70%);
         border: none;
         height: 50px;
-        width: 100px;
+        width: 70px;
         background-color:rgba(128, 128, 128, 0);
         color:rgb(0, 218, 207) ;
         
@@ -205,48 +208,69 @@
 
 
 .mainSection{
-    min-height: 80vh;
-    // background-image: linear-gradient(to top,rgb(0, 78, 74) 1%,black );
-    
+   
+    background-image: linear-gradient(to top,rgb(0, 53, 51) 1%,black );
+    width: 100vw;
     @include centerItemGrid(center,center);
-    grid-template-columns: 3fr 6fr;
+    grid-template-columns: 2fr 6fr;
 //    @include myBgGradient(bottom, blue,gray ,white );
 
 
 
 
-    .leftMainDiv{
+    .rightMainDiv{
         @include centerItemFlex(stretch, stretch );
-        padding:5%;
-        height: 90vh;
+        flex-direction: column;
+        padding:2%;
+     
         .container{
+            height: 95vh;
+            // border:1px solid red;
             @include centerItemFlex(stretch, stretch );
+            // background-color: rgb(180, 214, 214);
+            padding: 5vh;
+            perspective: 1500px;
+             .myDiv{
+                background-color: rgba(237, 255, 255, 0);
+                border: 2px solid rgba(0, 167, 167, 0.164);
+                    height:100%;
+                    width: 100%;
+                    
+                    transform: rotateY(-15deg) translateZ(-10vh);
+                    animation: rotate90 1s ease;
+             }
             
         }
         // border: 1px solid aqua;
         
     }
-    .rightMainDiv{
+    @keyframes rotate90 {
+        0%{transform: rotateY(-90deg) translateZ(-10vh);}
+        // 0%{transform: rotateY(-15deg) translateZ(-10vh);}
+        100%{transform: rotateY(-15deg) translateZ(-10vh);}
+    }
+    .leftMainDiv{
         @include centerItemFlex(stretch, stretch );
-        flex-direction:column;
-        width: 80%;
+        flex-direction:column-reverse;
+        width: 60%;
         margin: auto;
+        position: sticky;
+        top: 0;
        
         
         button{
-            // min-width: 20vw;
-            // max-width: 20vw;
-            // min-height:100px ;
-            // max-height: 20vh;
+            
             height: 20vh;
             border: none;
             color: var(--myTextColor);
-            font-size: x-large;
-            
+            font-size: 20px;
+            background-color: rgba(231, 231, 231, 0);
             @include centerItemFlex(center,center );
             border-right: 1vh solid rgba(128, 128, 128, 0);
             border-left: 1vh solid rgba(128, 128, 128, 0);
             font-weight: 900;
+            position: sticky;
+            bottom: 20vh;
             &:hover{
                 
                 cursor: pointer;
@@ -257,6 +281,10 @@
                     
                     color: rgb(0, 236, 236);
                 }
+            }
+            &:focus{
+                border-left: 1vh solid rgb(0, 121, 121);
+                border-right: 1vh solid rgb(0, 121, 121);
             }
            
         }
@@ -288,7 +316,7 @@
 
 .lastSection{
     min-height: 40vh;
-    background-color: rgb(0, 58, 58);
+    background-color: rgb(248, 248, 248);
     @include centerItemFlex(center,center );
     div{
         background-color: rgb(0, 58, 58);

@@ -11,6 +11,11 @@
   list-style: none;
 }
 
+button {
+  border: none;
+  outline: none;
+}
+
 .mainbody {
   color: rgb(188, 247, 237);
   position: relative;
@@ -18,7 +23,7 @@
 
 .heroSection {
   padding: 0 100px;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   display: grid;
@@ -105,7 +110,7 @@
 .buttonDiv {
   text-align: center;
   min-width: 20vw;
-  width: 30vw;
+  width: 22vw;
   height: 50px;
   position: absolute;
   background-color: rgb(0, 0, 0);
@@ -119,10 +124,10 @@
   align-items: center;
 }
 .buttonDiv .buttons button {
-  margin-right: 1vw;
+  transform: translateX(70%);
   border: none;
   height: 50px;
-  width: 100px;
+  width: 70px;
   background-color: rgba(128, 128, 128, 0);
   color: rgb(0, 218, 207);
   font-weight: 900;
@@ -163,56 +168,85 @@
 }
 
 .mainSection {
-  min-height: 80vh;
+  background-image: linear-gradient(to top, rgb(0, 53, 51) 1%, black);
+  width: 100vw;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 3fr 6fr;
-}
-.mainSection .leftMainDiv {
-  display: flex;
-  justify-content: stretch;
-  align-items: stretch;
-  padding: 5%;
-  height: 90vh;
-}
-.mainSection .leftMainDiv .container {
-  display: flex;
-  justify-content: stretch;
-  align-items: stretch;
+  grid-template-columns: 2fr 6fr;
 }
 .mainSection .rightMainDiv {
   display: flex;
   justify-content: stretch;
   align-items: stretch;
   flex-direction: column;
-  width: 80%;
-  margin: auto;
+  padding: 2%;
 }
-.mainSection .rightMainDiv button {
+.mainSection .rightMainDiv .container {
+  height: 95vh;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 5vh;
+  perspective: 1500px;
+}
+.mainSection .rightMainDiv .container .myDiv {
+  background-color: rgba(237, 255, 255, 0);
+  border: 2px solid rgba(0, 167, 167, 0.164);
+  height: 100%;
+  width: 100%;
+  transform: rotateY(-15deg) translateZ(-10vh);
+  animation: rotate90 1s ease;
+}
+@keyframes rotate90 {
+  0% {
+    transform: rotateY(-90deg) translateZ(-10vh);
+  }
+  100% {
+    transform: rotateY(-15deg) translateZ(-10vh);
+  }
+}
+.mainSection .leftMainDiv {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column-reverse;
+  width: 60%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+}
+.mainSection .leftMainDiv button {
   height: 20vh;
   border: none;
   color: var(--myTextColor);
-  font-size: x-large;
+  font-size: 20px;
+  background-color: rgba(231, 231, 231, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   border-right: 1vh solid rgba(128, 128, 128, 0);
   border-left: 1vh solid rgba(128, 128, 128, 0);
   font-weight: 900;
+  position: sticky;
+  bottom: 20vh;
 }
-.mainSection .rightMainDiv button:hover {
+.mainSection .leftMainDiv button:hover {
   cursor: pointer;
   border-left: 1vh solid rgb(0, 121, 121);
   border-right: 1vh solid rgb(0, 121, 121);
 }
-.mainSection .rightMainDiv button:hover h3 {
+.mainSection .leftMainDiv button:hover h3 {
   color: rgb(0, 236, 236);
+}
+.mainSection .leftMainDiv button:focus {
+  border-left: 1vh solid rgb(0, 121, 121);
+  border-right: 1vh solid rgb(0, 121, 121);
 }
 
 .lastSection {
   min-height: 40vh;
-  background-color: rgb(0, 58, 58);
+  background-color: rgb(248, 248, 248);
   display: flex;
   justify-content: center;
   align-items: center;

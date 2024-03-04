@@ -8,17 +8,21 @@
     <title>Document</title>
    
 </head>
-<body class="mainbody">
+<body class="mainbody" onload="introPlay();">
     
-
+<audio id="ambient" src="./assets/audios/ambient.mp3"></audio>
+<audio id="interface" src="./assets/audios/interface.mp3"></audio>
+<audio id="swing" src="./assets/audios/swing.mp3"></audio>
    
+    <div class="contactIcons">
 
+    </div>
     
     <div class="heroSection">
 
         <div class="introDiv">
             <h2><span style="color: rgb(0, 124, 124);">MD</span> HAYATULLAH</h2>
-             <h4>MERN Stack Web Developer</h4>
+             <h4>Front End Developer</h4>
         </div>
 
         <div class="imgDiv">
@@ -38,10 +42,12 @@
 
 
 
+   <div class="divMern">
+    <h1>MERN</h1>
+   </div>
 
 
-
-   <div class="buttonDiv">
+   <!-- <div class="buttonDiv">
    
        <div class="buttons">
         <button onclick="setLeftMainDiv(1)" class=" rightBtn bioBtnDiv  "><h3>Bio</h3></button>
@@ -57,13 +63,13 @@
         </div>
        </div>
    
-   </div>
+   </div> -->
 
     <div class="mainSection">
         <div class="leftMainDiv">
-            <button onclick="setRightMainDiv(3)" class=" rightBtn bioBtnDiv  "><h3>Projects</h3></button>
-            <button onclick="setRightMainDiv(2)" class=" rightBtn SkillsBtnDiv "><h3>Skills</h3></button>
-            <button onclick="setRightMainDiv(1)" class=" rightBtn ProjectsBtnDiv "><h3>Bio</h3></button>
+            <button onclick="setRightMainDiv(3), clickPlay()" class=" rightBtn bioBtnDiv  "><h3>Projects</h3></button>
+            <button onclick="setRightMainDiv(2), clickPlay()" class=" rightBtn SkillsBtnDiv "><h3>Skills</h3></button>
+            <button onclick="setRightMainDiv(1), clickPlay()" class=" rightBtn ProjectsBtnDiv "><h3>Bio</h3></button>
        </div>
        <div class="rightMainDiv">
         

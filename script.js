@@ -18,7 +18,33 @@ const  setRightMainDiv=(x)=>{
   
    
 };
-
+const ambient= document.getElementById("ambient");
+const interface= document.getElementById("interface");
+const swing= document.getElementById("swing");
+const introPlay=()=>{
+    
+    interface.pause();
+    swing.pause();
+    ambient.play();
+    console.log(ambient);
+};
+const clickPlay=()=>{
+ 
+    ambient.pause();
+    swing.pause();
+    interface.pause();
+    interface.play();
+    
+    console.log(interface);
+};
+const rotatePlay=()=>{
+   
+    ambient.pause();
+    interface.pause();
+    swing.pause();
+    swing.play();
+    console.log(swing);
+};
 
 
 

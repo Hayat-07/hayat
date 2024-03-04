@@ -80,8 +80,8 @@ body{
                 // border: 1px solid red;
                 text-align: center;
                 @include centerItemGrid(stretch,stretch );
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 1vh;
+                grid-template-columns: 1fr 1fr ;
+                gap: 3vw;
                 
                 .cardProject{
                  background-color: white;

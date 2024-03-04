@@ -42,8 +42,8 @@ body .myDiv .display {
   display: grid;
   justify-content: stretch;
   align-items: stretch;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1vh;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
 }
 body .myDiv .display::-webkit-scrollbar {
   display: none;

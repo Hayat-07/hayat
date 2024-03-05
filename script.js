@@ -18,36 +18,33 @@ const  setRightMainDiv=(x)=>{
   
    
 };
-const ambient= document.getElementById("ambient");
+
 const interface= document.getElementById("interface");
 const swing= document.getElementById("swing");
+
 const introPlay=()=>{
-    
-    interface.pause();
-    swing.pause();
+    const ambient= document.getElementById("ambient");
+    // ambient.currentTime = 0;
+    ambient.load();
     ambient.play();
-    console.log(ambient);
+    console.log("IntroPlay()  function ambient called ")
 };
+
+
 const clickPlay=()=>{
- 
-    ambient.pause();
-    swing.pause();
-    interface.pause();
+    interface.currentTime = 0;
     interface.play();
-    
-    console.log(interface);
 };
 const rotatePlay=()=>{
-   
-    ambient.pause();
-    interface.pause();
-    swing.pause();
+    swing.currentTime = 0;
     swing.play();
-    console.log(swing);
+    
 };
 
 
-
+window.onload=function(){
+    introPlay();
+};
 
 
 
